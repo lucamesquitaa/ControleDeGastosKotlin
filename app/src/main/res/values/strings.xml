@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ControleDeGastosKotlin</string>
+    <string name="add_title">Título</string>
+    <string name="add">Adicione o título e o valor recebido ou gasto</string>
+    <string name="money">Valor</string>
+    <string name="btn_add">Adicionar</string>
+    <string name="in">Recebeu</string>
+    <string name="out">Gastou</string>
+    <string name="delete_message">Deseja mesmo excluir?</string>
+
+    <string-array name="type">
+        <item>Tipo de gasto:</item>
+        <item>Contas</item>
+        <item>Moradia</item>
+        <item>Transferência</item>
+        <item>Alimentação</item>
+        <item>Estudo</item>
+        <item>Lazer</item>
+        <item>Compras</item>
+    </string-array>
+
+</resources>

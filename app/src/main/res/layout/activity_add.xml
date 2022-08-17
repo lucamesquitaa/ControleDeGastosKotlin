@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AddActivity"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            style="@style/TextViewForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/edit_title"
+            style="@style/EditTextForm"
+            android:layout_width="match_parent"
+            android:hint="@string/add_title" />
+
+
+        <EditText
+            android:id="@+id/edit_money"
+            style="@style/EditTextForm"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:hint="@string/money" />
+
+<RadioGroup
+    android:id="@+id/radio_in_out"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/in_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/in"
+        android:textColor="@color/green"/>
+    <RadioButton
+        android:id="@+id/out_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="@string/out"
+        android:textColor="@color/red"/>
+
+</RadioGroup>
+
+        <Spinner
+            android:id="@+id/spinner_out"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/btn_send_add"
+            style="@style/ButtonForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_add" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
